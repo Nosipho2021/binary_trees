@@ -6,14 +6,14 @@
  */
 void binary_tree_delete(binary_tree_t *tree)
 {
-    if (tree != NULL)
-    {
-        /* Post-order traversal for deletion */
-        binary_tree_delete(tree->left);
-        binary_tree_delete(tree->right);
+	if (tree != NULL)
+	{
+	/* Post-order traversal for deletion */
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
 
-        /* Delete current node */
-        free(tree);
-    }
+	/* Delete current node */
+	free(tree);
+	}
 }
 
