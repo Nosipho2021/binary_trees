@@ -7,17 +7,17 @@
  */
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
-    /* Check if tree or func is NULL */
-    if (tree == NULL || func == NULL)
-        return;
+	/* Check if tree or func is NULL */
+	if (tree == NULL || func == NULL)
+	    return;
 
-    /* Traverse the left subtree */
-    binary_tree_inorder(tree->left, func);
+	/* Traverse the left subtree */
+	binary_tree_inorder(tree->left, func);
 
-    /* Call the function for the current node */
-    func(tree->n);
+	/* Call the function for the current node */
+	func(tree->n);
 
-    /* Traverse the right subtree */
-    binary_tree_inorder(tree->right, func);
+	/* Traverse the right subtree */
+	binary_tree_inorder(tree->right, func);
 }
 
