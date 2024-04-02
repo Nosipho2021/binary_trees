@@ -35,7 +35,7 @@ bst_t *sorted_array_to_bst(int *array, int start, int end)
 bst_t *array_to_bst(int *array, size_t size)
 {
 	if (array == NULL || size == 0)
-        return (NULL);
+	return (NULL);
 
 	/*Build BST from sorted array*/
 	return (sorted_array_to_bst(array, 0, size - 1));
